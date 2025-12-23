@@ -1,8 +1,15 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONDO */
+body {
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #5f2cff, #9b5cff);
-  color: #fff;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -18,7 +25,7 @@ body {
 
 .hero p {
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .heart {
@@ -27,7 +34,7 @@ body {
   margin-top: 15px;
 }
 
-/* MEMBERS */
+/* SECCIÓN MIEMBROS */
 .members {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -37,12 +44,14 @@ body {
   margin: auto;
 }
 
+/* TARJETAS */
 .card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 20px;
+  backdrop-filter: blur(6px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -58,9 +67,10 @@ body {
   margin-bottom: 15px;
 }
 
+/* TEXTO TARJETAS */
 .card h2 {
-  margin: 10px 0 5px;
   font-size: 1.6rem;
+  margin: 10px 0 5px;
 }
 
 .card p {
@@ -73,7 +83,7 @@ body {
   font-size: 1.8rem;
 }
 
-/* TAG */
+/* ETIQUETAS */
 .tag {
   display: inline-block;
   margin-top: 10px;
@@ -85,7 +95,7 @@ body {
   font-weight: 600;
 }
 
-/* EXTRAS */
+/* SECCIÓN EXTRA */
 .extras {
   padding: 50px 20px;
   background: rgba(0, 0, 0, 0.2);
@@ -102,7 +112,7 @@ body {
   opacity: 0.9;
 }
 
-/* REASONS */
+/* RAZONES */
 .reasons {
   display: flex;
   justify-content: center;
